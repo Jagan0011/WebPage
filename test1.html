@@ -1,0 +1,265 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+ background-color: orange;
+    padding: 12px 10px;
+}
+.header1 {
+  overflow: hidden;
+  background-color: orange;
+  padding: 20px 10px;
+   text-align: left;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.header-left {
+  float: left;
+ 
+}
+.floatRight{
+float:right;
+margin-left:20px;
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+input[type=submit]{
+background-color:orange;
+color:white;
+padding:8px 20px;
+}
+footer {
+  background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;
+ 
+}
+</style>
+</head>
+<body >
+ <span style="font-size: 30px;position: absolute; right: 50;" >
+    <div class="wrapper">
+      <i class="bi bi-cart" style="font-size:35px"></i>
+    <span style="font-size:16px" id = 'cart'>  </span> 
+    
+    </div>
+  </span>
+
+ 
+<img src="fc_logo.png" height="40" width="120">
+<input type="text" placeholder="Search for Category, Brand or Product" style="width:400px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 0 0 0 20px;
+                    margin:20px 20px;">
+
+<img src="cart2.jpg" height="60" width="70" class="floatRight">
+<div class="header">
+  <div class="header-right">
+    <a href="">ALL CATEGORIES</a>
+     <a href="">BOY  FASHION</a>
+    <a href="#contact">GIRL FASHION</a>
+    <a href="#about">FOOTWARE</a>
+    <a href="#about">TOYS</a>
+    <a href="#about">DIAPERING</a>
+    <a href="#about">GEAR</a>
+    <a href="#about">FEEDING</a>
+    <a href="#about">BATH</a>
+    <a href="#about">NURSERY</a>
+    <a href="#about">MOMS</a>
+    <a href="#about">HEALTH</a>
+    <a href="#about">BOUTIQUES</a>
+  </div>
+</div>
+
+<center><img src="main.webp" height="300" width="900"></center>
+<div class="header">
+ <div class="header-left">
+    <a href="#home">Filter By</a>
+    <a href="#contact">Sub Category</a>
+    <a href="#about">Brands</a>
+    <a href="#about">Discounts</a>
+    <a href="#about">Price</a>
+    <a href="#about">Age</a>
+    <a href="#about">Gender</a>
+    <a href="#about">Colors</a>
+    <a href="#about">Material</a>
+   
+  </div>
+</div>
+<div class="header">
+ <div class="header-right">
+    <a  href="#home">Enter Pincode</a>
+    <a href="#contact">Check</a>
+    
+   
+  </div>
+</div>
+<table border="2">
+<tr><th><td>
+<img src="1.jpg" height="300" width="300">
+Babyhug Half Sleeves Ice Cream Print Top with Shorts - Pink
+<center><small> Multiple sizes available</small></center>
+<center><b>RS. 365.39 | <S>RS.599.00</S></b></center>
+
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th><td>
+<img src="2.jpg" height="300" width="300">
+Babyoye Sleeveless Frock With Bloomer Ice Cream Print - Pink White
+ <center><small> Multiple sizes available</small></center>
+<center><b>RS. RS.511.36 | <S>RS.799.00 </S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th>
+<td>
+<img src="3.jpg" height="300" width="300">
+Pine Kids Sleeveless Tee - Blue
+ <center><small> Multiple sizes available</small></center> 
+ <center><b>RS. 202.42 |<S> RS.349.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th>
+<td>
+<img src="4.jpg" height="300" width="300">
+Babyhug Singlet Tie Knot Style Jumpsuit - Peach 
+<center><small> Multiple sizes available</small></center>
+ <center><b>RS. 559.3 |<S> RS.799.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th></tr>
+<tr><th><td>
+<img src="5.jpg" height="300" width="300">
+Babyhug Sleeveless Checked Jumpsuit - Yellow
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 670.71| <S>RS.849.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th><td>
+<img src="6.jpg" height="300" width="300">
+Babyhug Frock with Half Sleeves Tee Floral Print - White Blue
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 482.31 |<S> RS.699.00</S> </b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th>
+<td>
+<img src="7.jpg" height="300" width="300">
+Babyhug Cap Sleeves Top with Shorts Flamingo Print - Pink
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 401.33| <S>RS.599.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th>
+<td>
+<img src="8.jpg" height="300" width="300">
+ Babyoye Cotton Dungaree Style Romper with Cap Sleeves Top Giraffe Print - Pink Yellow 
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 789.21 |<S> RS.999.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th></tr>
+<tr><th><td>
+<img src="9.jpg" height="300" width="300">
+Babyoye Bio-Wash Half Sleeves Tee & Shorts Crab Print - Blue Grey
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 947.21 | <S>RS.1199.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th><td>
+<img src="10.jpg" height="300" width="300">
+Babyoye Singlet Top & Shorts Bow Appliques - White Peach
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 527.34 |<S> RS.799.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th>
+<td>
+<img src="11.jpg" height="300" width="300">
+Pine Kids Sleeveless Tee - Blue
+ <center><small> Multiple sizes available</small></center> <center><b> RS. 545.22 |<S> RS.699.00</S></b></center>
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th>
+<th>
+<td>
+<img src="12.jpg" height="300" width="300">
+Babyhug Biowash Sleeveless Printed Tshirt - Blue
+ <center><small> Multiple sizes available</small></center>
+ <center><b>RS. 219.87 |<S> RS.349.00</S></b></center>
+
+<button style="background-color:orange" onclick="add()">ADD TO CART</button></td>
+</th></tr>
+</table>
+
+<footer>
+    <a href="#home">Shortlist</a>
+    <a href="#contact">Recently Viewed</a>
+    <a href="#about">Quick Reorder</a>
+    <a href="#about">Track order</a>
+    <a href="#about">Be in touch</a>
+    <a href="#about">Become a franchise</a>
+    <a href="#about">Preschool admissions</a>
+       
+</footer>
+</body>
+<!-- added the script -->
+<script>
+  var data = 0;
+  document.getElementById('cart').innerText = data;
+  function add()
+  {
+    data = data+1;
+    document.getElementById('cart').innerText = data;
+  }
+</script>
+</html>
+
+
+
+
